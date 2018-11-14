@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Generator</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="Federico Castorina" content="Quote Generator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <!--Sidenav Opened-->
+    <div id="mySidenav" class="sidenav" onclick="buildQuote()">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" onclick="menuChoice(0)">Wisdom</a>
+      <a href="#" onclick="menuChoice(1)">Braveness</a>
+    </div>
+    <!--Sidenav Opened-->
+    
+    <!-- Button Sidenav -->
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+         <a href="#" class="buttonMenu">&#9776;Menu</a>
+    </span>  
+    <!-- Button Sidenav -->
+    
+    <!-- main page content-->
+    <div id="main">
+        <div id='main_div' >
+            <h1 style="font-size:4.5vw">Quote Generator</h1>
+            
+            <div class="generatedParagraph">
+                <p><span class="myText"></span></p><br>
+                <p><span class="myText"></span></p><br>
+                <p><span class="myText"></span></p><br>
+                <p><span class="myText"></span></p><br>
+                <p style="margin-bot: 30px;"><span class="myText"></span></p><br>
+            </div> 
+        </div>
+        
+        <!-- bot Buttons-->
+        <div class="buttons">
+                <div class='button-wrapper'>
+                    <button class="button button5" onclick="printMoreQuote()">
+                        Print quote(s)
+                    </button>
+                </div>
+
+                <div class="border-selects">
+                    <select id="numberOfQuote">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div> 
+        </div>
+        <!-- bot Buttons-->
+        
+                    
+        
+    </div>
+    <!-- main page content-->
+
+    
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
